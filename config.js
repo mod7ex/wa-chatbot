@@ -93,7 +93,7 @@ let inputMap = Object.assign([], {
 	clear: function(){
 		this.length = 0
 	}
-}) // [2 ==> undefined, first_name ==> 'Mourad']
+}) // [{2 ==> undefined}, {first_name ==> 'Mourad'}]
 
 let started = false;
 
