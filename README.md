@@ -1,4 +1,4 @@
-## https://dev.to/jagadyudha/how-to-create-a-whatsapp-bot-with-nodejs-3287
+## https://wwebjs.dev/
 
 # npm install
 

@@ -22,8 +22,12 @@ client.on("ready", () => {
 });
 
 
-client.on("message", (message) => {
+client.on("message", async (message) => {
 
-  message.reply(handelMsg(message.body));
+  const chat = await message.getChat();
+
+  if([...chat.participants].length === 1) {
+    message.reply(handelMsg(message.body));
+  }
 
 });
