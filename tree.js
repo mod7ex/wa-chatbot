@@ -132,7 +132,7 @@ let B = {
 	},
 };
 
-export default {
+let A = {
 	ask: `Hello! You want to buy the property of your dream?\nWondering how! Calm down! Lenddoo is here to help you!\nOur mission is to suggest for you the best UAE’s Mortgage!\nCool , but can I get a mortgage ? Even, I don’t know much can\n afford? don’t worry! Lenddoo will Find the solution for you!\n\nEnter 1 if you want to know more about Lennddo\nEnter 2 if you want to start your journey with Lenddoo`,
 
 	1: {
@@ -163,3 +163,10 @@ export default {
 		},
 	},
 };
+
+/*
+ * role[0] in this example we suppose that all <options> are only number and can't be words ....
+ * role[1] 'end' can't have siblings except for the key 'ask' (optional)
+*/
+
+module.exports = A

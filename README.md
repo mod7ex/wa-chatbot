@@ -1,4 +1,6 @@
-## https://wwebjs.dev/
+## https://wwebjs.dev
+
+## https://docs.wwebjs.dev
 
 # npm install
 

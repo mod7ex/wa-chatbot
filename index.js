@@ -21,13 +21,30 @@ client.on("ready", () => {
   console.log("Client is ready!");
 });
 
-
 client.on("message", async (message) => {
 
   const chat = await message.getChat();
 
-  if([...chat.participants].length === 1) {
-    message.reply(handelMsg(message.body));
+  if(!chat.isGroup) {
+    const contact = await message.getContact();
+    message.reply(handelMsg(message.body, `${contact.id.user}`))
   }
 
 });
+
+/*
+  // don't reply if group
+
+  client.on("message", async (message) => {
+
+    const chat = await message.getChat();
+
+    if(Object.keys(chat.participants).length === 2) {
+      message.reply(handelMsg(message.body));
+    }
+    
+  });
+*/
+
+
+
