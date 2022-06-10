@@ -32,19 +32,5 @@ client.on("message", async (message) => {
 
 });
 
-/*
-  // don't reply if group
-
-  client.on("message", async (message) => {
-
-    const chat = await message.getChat();
-
-    if(Object.keys(chat.participants).length === 2) {
-      message.reply(handelMsg(message.body));
-    }
-    
-  });
-*/
-
 
 
